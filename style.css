@@ -203,6 +203,7 @@ button:hover{
     background: #101010;
     width: 100%;
     padding: 100px 0px;
+    height:auto;
 
 
 }
@@ -215,8 +216,10 @@ button:hover{
 
 
 }
+
 .box{
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     min-height: 400px;
@@ -224,9 +227,22 @@ button:hover{
 
 }
 .card{
-    height: 365px;
-    width: 635px; 
-    padding:20px 35px;
+    height:800px;
+    width: 30%; 
+    padding:10px 10px;
+    background: #191919;
+    margin:10px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    border-radius: 30px;
+
+
+}
+.work{
+    height:800px;
+    width:30%; 
+    padding:10px 10px;
     background: #191919;
     margin:10px;
     position: relative;
@@ -235,14 +251,16 @@ button:hover{
     border-radius: 30px;
 
 }
-.card i{
-    font-size: 35px;
-    display: block;
+.past{
+    height:800px;
+    width: 30%; 
+    padding:10px 10px;
+    background: #191919;
+    margin:10px;
+    position: relative;
+    overflow: hidden;
     text-align: center;
-    margin: 25px 0px;
-    color:#f9004d;
-
-
+    border-radius: 30px;
 }
 h5{
     color: white;
@@ -256,6 +274,62 @@ h5{
     margin-bottom: 15px;
 
 }
+.work p{
+    color: #fcfc;
+    font-size : 21px;
+    line-height: 22px;
+    margin-bottom: 15px;
+
+}
+.past p{
+    color: #fcfc;
+    font-size : 21px;
+    line-height: 22px;
+    margin-bottom: 15px;
+}
+.card img{
+    height:350px;
+    width: 270px;
+    border-radius: 20px;
+    
+}
+.work img{
+    height: 350px;
+    width: 270px;
+    border-radius: 20px;
+
+}
+.past img{
+    height: 350px;
+    width: 270px;
+    border-radius: 20px;
+
+}
+.card i{
+    font-size: 35px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color:#f9004d;
+
+
+}
+.work i{
+    font-size: 35px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color:#f9004d;
+
+}
+.past i{
+    font-size: 35px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color:#f9004d;
+}
+
 .card .button{
     background-color: #f9004d;
     color: white;
@@ -273,6 +347,41 @@ h5{
     cursor: pointer;
 
 }
+.past .button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 2px 1px;
+    border-radius:30px;
+    transition: .4s;
+
+}
+.past .button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+.work .button{
+    background-color: #f9004d;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 2px 1px;
+    border-radius:30px;
+    transition: .4s;
+
+}
+.work .button:hover{
+    background-color: transparent;
+    border: 2px solid #f9004d;
+    cursor: pointer;
+}
+
+
 .contact-me{
     width: 100%;
     height: 290px;
@@ -357,4 +466,13 @@ footer p:nth-child(2){
     border: 2px solid #f9004d;
     cursor: pointer;
     
+}
+footer .copy p{
+    color:white;
+    font-size: 17px;
+    width: 500px;
+    text-align: center;
+    line-height: 26px;
+    font-weight: bold;
+
 }
